@@ -28,6 +28,7 @@ const POST_GRAPHQL_FIELDS = `
   }
 `;
 
+
 async function fetchGraphQL(query: string, preview = false): Promise<any> {
   return fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
